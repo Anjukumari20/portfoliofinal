@@ -35,7 +35,7 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .services, .skills, .teams, .resources, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
@@ -260,16 +260,18 @@ section .title::after{
 }
 
 /* Education Section Styling */
-.Education, .teams{
+.Education, .teams, .resources{
     color:#fff;
     background: #111;
 }
 .Education.title::before,
-.teams .title::before{
+.teams .title::before,
+.resources .title::before{
     background: #fff;
 }
 .Education .title::after,
-.teams .title::after{
+.teams .title::after,
+.resources .title::after{
     background: #111;
     color: white;
     content: "_______________";
@@ -337,16 +339,18 @@ section .title::after{
 
 
 /* experience section styling */
-.services, .teams{
+.services, .teams, .resources{
     color:#fff;
     background: #111;
 }
 .services .title::before,
-.teams .title::before{
+.teams .title::before,
+.resources .title::before{
     background: #fff;
 }
 .services .title::after,
-.teams .title::after{
+.teams .title::after,
+.resources .title::after{
     background: #111;
     content: "";
 }
@@ -357,7 +361,7 @@ section .title::after{
     border-radius: 6px;
     padding: 50px 25px;
     cursor: pointer;
-    height: 650px;
+    height: 570px;
     transition: all 0.3s ease;
 }
 .services .serv-content .card:hover{
@@ -395,6 +399,10 @@ section .title::after{
 }
 .services .serv-content .card:hover .box .text{
     color: black;
+}
+.services .serv-content .card .box p{
+    font-size: small;
+    padding-top: 10px;
 }
 .services .serv-content .card .text-time{
     font-size: 10px;
@@ -561,6 +569,58 @@ section .title::after{
 .owl-dot.active,
 .owl-dot:hover{
     background: crimson!important;
+}
+
+/* resources section styling */
+.resources .title::after{
+    content: "";
+}
+.resources .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: 350px;
+}
+.resources .carousel .card:hover{
+    background: crimson;
+}
+.resources .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.resources .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.resources .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 0px 0;
+}
+.resources .carousel .card a{
+    color: red;
+    margin-bottom: 10px;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.resources .carousel .card:hover a{
+    color: white;
+}
+.resources .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    transition: all 0.3s ease;
+}
+.resources .carousel .card:hover img{
+    border-color: #fff;
 }
 
 /* contact section styling */
@@ -801,6 +861,13 @@ footer span a:hover{
     .teams .title::after{
         font-size: 12px;
     }
+    .resources .carousel .card{
+        height: 650px;
+    }
+    .resources .title::after{
+        font-size: 12px;
+    }
+
 }
 
 @media (max-width: 500px) {
