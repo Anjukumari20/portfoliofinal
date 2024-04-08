@@ -165,7 +165,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("Images/profile-4.jpeg") no-repeat center;
+    background: url("Images/portfolio3.png") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -182,7 +182,7 @@ section .title::after{
 }
 .home .home-content .text-1{
     font-size: 27px;
-    color: rgb(17, 37, 219);
+    color: rgb(206, 219, 17);
 }
 .home .home-content .text-2{
     font-size: 75px;
@@ -192,7 +192,7 @@ section .title::after{
 .home .home-content .text-3{
     font-size: 40px;
     margin: 5px 0;
-    color: rgb(211, 208, 21);
+    color: rgb(21, 211, 192);
 }
 .home .home-content .text-3 span{
     color: crimson;
@@ -283,7 +283,7 @@ section .title::after{
     border-radius: 6px;
     padding: 50px 5px;
     cursor: pointer;
-    height: 500px;
+    height: 400px;
     margin-right: 20px;
     transition: all 0.3s ease;
 }
@@ -296,8 +296,8 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .Education .serv-content .card .box img{ 
-    max-width: 270px;
-    max-height: 100px;
+    max-width: 3500px;
+    max-height: 150px;
 }
 
 .Education .serv-content .card .box .text-name{ 
@@ -351,13 +351,13 @@ section .title::after{
     content: "";
 }
 .services .serv-content .card{
-    width: calc(33% - 20px);
+    width: calc(33% - 10px);
     background: #222;
     text-align: center;
     border-radius: 6px;
     padding: 50px 25px;
     cursor: pointer;
-    height: 500px;
+    height: 650px;
     transition: all 0.3s ease;
 }
 .services .serv-content .card:hover{
@@ -368,8 +368,8 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .services .serv-content .card .box img{ 
-    max-width: 270px;
-    max-height: 100px;
+    max-width: 350px;
+    max-height: 150px;
 }
 
 .services .serv-content .card .box ul{ 
@@ -399,6 +399,7 @@ section .title::after{
 .services .serv-content .card .text-time{
     font-size: 10px;
     margin-bottom: 3px;
+    color: greenyellow;
 }
 /* skills section styling */
 
@@ -462,29 +463,29 @@ section .title::after{
 .skills-content .right .c::before{
     width: 90%;
 }
-.skills-content .right .cpp::before{
-    width: 90%;
+.skills-content .right .oops::before{
+    width: 80%;
 }
-.skills-content .right .cg::before{
+.skills-content .right .dsa::before{
     width: 80%;
 }
 .skills-content .right .java::before{
-    width: 60%;
+    width: 80%;
 }
 .skills-content .right .html::before{
     width: 60%;
 }
 .skills-content .right .python::before{
-    width: 70%;
+    width: 85%;
 }
-.skills-content .right .sql::before{
-    width: 70%;
+.skills-content .right .mongodb::before{
+    width: 75%;
 }
-.skills-content .right .excel::before{
+.skills-content .right .microservices::before{
     width: 80%;
 }
-.skills-content .right .tableau::before{
-    width: 90%;
+.skills-content .right .aws::before{
+    width: 80%;
 }
 .skills-content .right .powerbi::before{
     width: 90%;
@@ -595,9 +596,16 @@ section .title::after{
 .contact .contact-content .info .head{
     font-weight: 500;
 }
-.contact .contact-content .info .sub-title{
-    color: #333;
+.contact .contact-content .info .sub-title-text{
+    color: chocolate;
 }
+.contact .contact-content .info .sub-title{
+    color: #007bff; /* Blue color, you can change it to your preferred color */
+    text-decoration: none; /* Remove underline from the link */
+}
+.contact .contact-content .info .sub-title:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
 .contact .right form .fields{
     display: flex;
 }
